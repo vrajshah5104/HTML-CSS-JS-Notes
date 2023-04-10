@@ -1,0 +1,278 @@
+/* External CSS */
+/* label {
+    background-color: rgb(117, 207, 26);
+    color: rgb(245, 66, 7);
+    border: 4px solid black;
+    border-radius: 20%;
+} */
+
+/* Element Selector */
+/* span {
+    background-color: yellow;
+    color: black;
+} */
+
+/* Element Selector List */
+/* span,p {
+    background-color: yellow;
+    color: brown;
+} */
+
+/* Universal Selector (*) */
+/* * {
+    border: 0.5px solid red;
+    box-sizing: border-box;
+} */
+
+/* ID Selector */
+/* #identitySelector {
+    border: 2px dotted blue;
+} */
+
+/* Class Selector */
+/* .classSelector {
+    border-radius: 50px;
+    border: 4px solid;
+    border-color: blue;
+} */
+
+/* Descendant Selector */
+/* li a {
+    color: aliceblue;
+    background: burlywood;
+} */
+
+/* Direct Child Selector */
+/* b > u {
+    color: cadetblue;
+    background: chocolate;
+} */
+
+/* strong {
+    border: 3px solid black;
+    padding: 10px 15px 20px 25px;
+    margin: 5px;
+}
+
+.BlockScope1 {
+    display: block;
+    background: red;
+    color: burlywood;
+}
+
+.BlockScope2 {
+    display: block;
+    background-color: burlywood;
+    color: red;
+    width: 80px;
+    height: 69px;
+}
+
+.InlineScope {
+    display: inline;
+    background-color: yellowgreen;
+    color: whitesmoke;
+}
+
+.InlineBlockScope {
+    display: inline-block;
+    background-color: cornflowerblue;
+    color: darkmagenta;
+    height: 40px;
+}
+
+.staticPosition {
+    position: static;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+
+.relativePosition {
+    position: relative;
+    background-color: black;
+    color: white;
+    border: 2px dotted red;
+    top: 20px;
+    left: 20px;
+}
+
+.fixedPosition {
+    position: fixed;
+    background-color: aqua;
+    color: black;
+    border: 2px solid red;
+}
+
+.absolutePosition {
+    position: absolute;
+}
+
+.stickyPosition {
+    position: sticky;
+} */
+
+/* Pseudo Classes */
+.buttonPseudoClass:hover {
+    color: black;
+    background: aqua;
+    cursor: pointer;
+}
+
+.buttonPseudoClass:active {
+    border: 8px solid rebeccapurple;
+}
+
+.buttonPseudoClass:focus {
+    color: black;
+    background-color: yellow;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    cursor: progress;
+}
+
+label:nth-child(even) {
+    background-color: red;
+}
+
+h4::before {
+    content: "Hello ";
+}
+
+h4::after {
+    content: ", Good Morning";
+}
+
+.pseudoElementShape {
+    margin: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pseudoElementShape::before {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.pseudoElementShape::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.flexParent {
+    background-color: red;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexChild {
+    background-color: aqua;
+    border: 4px solid darkblue;
+    width: 100px;
+    height: 100px;
+}
+
+.buttonAnimation {
+    background-color: aqua;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all ease-in 250ms 250ms;
+}
+
+.buttonAnimation:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.boxAnimation {
+    background-color: black;
+    height: 69vh;
+    width: 69vw;
+    position: relative;
+}
+
+.ballAnimation {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.ballAnimation:hover {
+    animation: movingBall 5s ease-in-out forwards;
+}
+@keyframes movingBall {
+    25% {
+        transform: translate(400%, 0);
+    }
+    50% {
+        transform: translate(400%, 200%);
+        background-color: aqua;
+        border-radius: 12%;
+    }
+    75% {
+        transform: translate(0, 200%);
+        background-color: coral;
+        border-radius: 24%;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: darkgrey;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .mediaQueries {
+        color: green;
+    }
+}
+@media screen and (max-width : 400px) {
+    .mediaQueries {
+        color: blue;
+    }
+}
+
+@media screen and (min-width : 850px) {
+    .mediaQueries {
+        color: aqua;
+    }
+}
+@media screen and (min-width : 900px) {
+    .mediaQueries {
+        color: chartreuse;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FSWDT - HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1><u>01-01-2023</u></h1>
+
+    <h2><u>Headings Links in HTML</u></h2>
+    <h1> Hello World h1 </h1>
+    <h2> Hello World h2 </h2>
+    <h3> Hello World h3 </h3>
+    <h4> Hello World h4 </h4>
+    <h5> Hello World h5 </h5>
+    <h6> Hello World h6 </h6>
+    <h7> Hello World </h7> HELLO WORLD
+    <br>
+    <a href="https://www.instagram.com"><h3>Instagram</h3></a>
+
+    <hr>
+
+    <h1><u>23-01-2023</u></h1>
+
+    <h2><u>Input Tags in HTML</u></h2>
+    <label>Username : </label>
+    <input type="text" placeholder="Enter Username" required />
+    <br><br>
+    <label>Password : </label>
+    <input type="password" placeholder="Enter Password" required />
+    <br><br>
+    <label>Gender : </label>
+    <input type="radio" name="gender" checked /><label>Male</label>
+    <input type="radio" name="gender" /><label>Female</label>
+    <input type="radio" name="gender" disabled /><label>Prefer not to say</label>
+    <br><br>
+    <label>Comments : </label>
+    <textarea rows="2" cols="40" minlength="2" maxlength="69" placeholder="Write your comments here"></textarea>
+
+    <hr>
+
+    <h1><u>30-01-2023</u></h1>
+
+    <h2><u>Forms in HTML</u></h2>
+    <form>
+    <label>Select Languages you code in : </label>
+    <input type="checkbox" value="c" name="languages" /><label>C</label>
+    <input type="checkbox" value="cpp" name="languages" /><label>C++</label>
+    <input type="checkbox" value="java" name="languages" /><label>Java</label>
+    <input type="checkbox" value="js" name="languages" /><label>JavaScript</label>
+    <input type="checkbox" value="none" name="languages" disabled /><label>None of them</label>
+    <br><br>
+    <label>Choose your Branch : </label>
+    <select>
+        <option value=""></option> 
+        <option value="cse">CSE</option>
+        <option value="etc">ETC</option>
+        <option value="csce">CSCE</option>
+        <option value="csse">CSSE</option>
+        <option value="it">IT</option>
+    </select>
+    <br><br>
+    <input type="submit" />
+    <input type="reset" />
+    </form>
+
+    <h2><u>Video, Audio, iFrame and Sementic Tags in HTML</u></h2>
+    <label>Here is our video to be displayed on the User Interface : </label>
+    <video controls loop width="200" height="150">
+        <source src="sample_video.mp4" type="video/mp4" />
+        Hey, your browser does not support video tag
+    </video>
+    <br><br>
+    <label>Audio to be heard on the UI : </label>
+    <audio controls>
+        <source src="sample_audio.ogg" type="audio/ogg" />
+    </audio>
+    <br><br>
+    <label>YouTube video to be played on the UI : </label>
+    <iframe width="260" height="145" src="https://www.youtube.com/embed/HtMF973tXIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <header>
+        <h4>Written in Sementic tag Header</h4>
+        <p>Written in same Sementic tag Header</p>
+    </header>
+    <label>Username using Pattern Attribute : </label>
+    <input type="text" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]$" />
+</body>
+</html>
